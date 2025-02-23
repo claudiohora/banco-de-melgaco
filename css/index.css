@@ -1,0 +1,43 @@
+.main-container {
+  height: 100vh;
+  padding: 50px;
+}
+
+.headbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.homepage-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.middle--left {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-img {
+  height: 200px;
+  border-radius: 10px;
+}
+
+.bottom {
+  display: flex;
+}
+
+.logo {
+  height: auto;
+  width: 100px;
+  border-radius: 5px;
+}
