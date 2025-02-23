@@ -28,6 +28,11 @@ body {
   color: #212121;
 }
 
+.main-container {
+  height: 100vh;
+  padding: 50px 100px;
+}
+
 a {
   color: #689738;
   text-decoration: none;
