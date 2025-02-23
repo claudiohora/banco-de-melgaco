@@ -1,0 +1,35 @@
+                                                                                            CLIENT:
+
+A client is created in the login page.
+
+The client has the following "attributes":
+    Username (can't be changed)
+    Password (can be changed)
+    First name  (can't be changed)
+    Last name (can't be changed)
+    Email (can be changed)
+    Phone number (can be changed)
+    Date of birth (not sure if I will include this one)  
+    Account number (attributed automatically, can't be changed)
+    Gender (can't be changed)
+
+Once the client logs in, they are redirected to the dashboard page
+From here, the client has 3 pages they can visit:
+    Dashboard (where they are right now)
+    Transactions
+    Profile
+The client also can logout
+
+Dashboard:
+    *see dashboard.webp to have an idea what it will look like*
+    This is a page that shows an overview of the account
+    Current balance
+    Client's credit/debit card (can only have 1 as of now)
+    Most recent transactions (money received from other clients and purchases)
+
+Transactions:
+    A page dedicated to showing the clients transactions. This page shows ALL of the transactions that occurred since
+    the account was created.
+
+Profile:
+    Page where the client can see and change some of their information (not all! see above)
