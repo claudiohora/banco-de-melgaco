@@ -10,10 +10,40 @@
 
     <title>Login</title>
   </head>
+
   <body>
-    <div class="login-container">
-      <input type="text" />
-      <input type="password" />
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Logo of the bank" class="logo-login" />
     </div>
+
+    <div class="login-container">
+      <div class="username-container">
+        <label for="">Username:</label>
+        <input type="text" />
+      </div>
+      <div class="password-container">
+        <label for="">Password:</label>
+        <input type="password" />
+      </div>
+      <button class="button-login">Login</button>
+      <a href="#" class="create-account">Create account</a>
+    </div>
+
+    <div class="create-account-container hidden">
+      <div class="username-container">
+        <label for="">Create new username:</label>
+        <input type="text" />
+      </div>
+      <div class="password-container">
+        <label for="">Create new password:</label>
+        <input type="password" />
+        <label for="">Confirm new password:</label>
+        <input type="password" />
+      </div>
+      <button class="button-login">Create Account</button>
+      <a href="#" class="create-account">Already have an account? Sign in</a>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
