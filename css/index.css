@@ -12,7 +12,22 @@
 
 .homepage-nav {
   display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.register-and-login {
+  display: flex;
   gap: 20px;
+}
+
+.link-special {
+  color: #212121 !important;
+  background-color: #689738;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  width: auto;
 }
 
 .middle {
@@ -25,10 +40,16 @@
 .middle--left {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.middle--right {
 }
 
 .middle-img {
-  height: 200px;
+  height: auto;
+  width: 400px;
   border-radius: 10px;
 }
 
@@ -36,8 +57,34 @@
   display: flex;
 }
 
+.grid-supported-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.grid-supported-services div {
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-supported-services img {
+  display: flex;
+  height: 20px;
+  width: auto;
+}
+
 .logo {
   height: auto;
   width: 100px;
   border-radius: 5px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #689738;
+}
+
+h2 {
+  font-size: 15px;
 }
