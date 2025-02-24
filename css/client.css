@@ -1,0 +1,70 @@
+.main-container--client {
+  display: flex;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* SIDEBAR */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #dcedc8;
+  height: 85vh;
+  width: 20%;
+
+  /* border-right: solid black; */
+}
+
+.sidebar-bank-logo {
+  margin-bottom: 100px;
+}
+
+.name-and-nav-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-last-name {
+  margin-bottom: 50px;
+}
+
+.nav-client {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logout-container {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* DASHBOARD */
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.credit-card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+}
+
+.todays-transactions-container {
+  background-color: brown;
+}
+
+.account-balance-container {
+  background-color: darkgreen;
+}
+
+.my-spendings-container {
+  background-color: gold;
+}
+
+.hidden {
+  display: none;
+}

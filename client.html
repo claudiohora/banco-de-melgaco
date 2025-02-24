@@ -7,14 +7,177 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/client.css" />
   </head>
   <body>
-    <section class="sidebar">
-      <a href="#dashboard">Dashboard</a>
-      <a href="#wallet">Wallet</a>
-      <a href="#transactions">Transactions</a>
-      <a href="#profile">Profile</a>
+    <section class="main-container main-container--client">
+      <section class="sidebar">
+        <img src="img/logo.png" alt="Bank logo" class="sidebar-bank-logo" />
+
+        <div class="name-and-nav-container">
+          <span class="first-last-name"> { First name } { Last name } </span>
+
+          <nav class="nav-client">
+            <div>
+              <ion-icon name="grid-outline"></ion-icon>
+              <a href="#dashboard" class="dashboard-a">Dashboard</a>
+            </div>
+            <div>
+              <ion-icon name="sync-outline"></ion-icon>
+              <a href="#transactions" class="transactions-a">Transactions</a>
+            </div>
+            <div>
+              <ion-icon name="person-outline"></ion-icon>
+              <a href="#profile" class="profile-a">Profile</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="logout-container">
+          <ion-icon name="log-out-outline"></ion-icon>
+          <a href="#logout">Logout</a>
+        </div>
+      </section>
+
+      <section class="dashboard-container">
+        <div class="account-balance-container">
+          <div>
+            <h2>Current Balance:</h2>
+            <p>1.000 €</p>
+          </div>
+
+          <div>
+            <h2>Loan:</h2>
+            <input type="number" />
+            <p>Interest rate: 5%</p>
+          </div>
+        </div>
+        <div class="todays-transactions-container">
+          <h2>Recent Transactions:</h2>
+          <div>
+            <span>24/02/2025 14:37</span>
+            <ion-icon name="navigate-outline"></ion-icon>
+            <span>Sent</span>
+            <span>Emma Schneider</span>
+            <span>-120.00 €</span>
+          </div>
+
+          <div>
+            <span>23/02/2025 19:20</span>
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Received</span>
+            <span>Michael Bauer</span>
+            <span>+75.00 €</span>
+          </div>
+
+          <div>
+            <span>23/02/2025 09:12</span>
+            <ion-icon name="navigate-outline"></ion-icon>
+            <span>Sent</span>
+            <span>Lukas Fischer</span>
+            <span>-65.00 €</span>
+          </div>
+
+          <div>
+            <span>22/02/2025 22:10</span>
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Received</span>
+            <span>Laura Hoffmann</span>
+            <span>+50.00 €</span>
+          </div>
+
+          <div>
+            <span>22/02/2025 18:45</span>
+            <ion-icon name="navigate-outline"></ion-icon>
+            <span>Sent</span>
+            <span>Sophia Wagner</span>
+            <span>-46.00 €</span>
+          </div>
+
+          <div>
+            <span>21/02/2025 08:55</span>
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Received</span>
+            <span>David Meier</span>
+            <span>+30.00 €</span>
+          </div>
+
+          <div>
+            <span>19/02/2025 16:22</span>
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Received</span>
+            <span>Anna Lehmann</span>
+            <span>+90.00 €</span>
+          </div>
+
+          <div>
+            <span>17/02/2025 11:48</span>
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Received</span>
+            <span>Felix Hoffmann</span>
+            <span>+75.00 €</span>
+          </div>
+
+          <div>
+            <span>15/02/2025 21:30</span>
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Received</span>
+            <span>Nina Schulz</span>
+            <span>+120.00 €</span>
+          </div>
+
+          <div>
+            <span>14/02/2025 07:15</span>
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Received</span>
+            <span>Marc Weber</span>
+            <span>+95.00 €</span>
+          </div>
+        </div>
+        <div class="my-spendings-container">
+          <h2>My Spendings This Month:</h2>
+          <p>February</p>
+          <p>Total: 231 €</p>
+          <div>
+            <div>
+              <span>24/02/2025 14:37</span>
+              <ion-icon name="navigate-outline"></ion-icon>
+              <span>Sent</span>
+              <span>Emma Schneider</span>
+              <span>-120.00 €</span>
+            </div>
+            <div>
+              <span>23/02/2025 09:12</span>
+              <ion-icon name="navigate-outline"></ion-icon>
+              <span>Sent</span>
+              <span>Lukas Fischer</span>
+              <span>-65.00 €</span>
+            </div>
+            <div>
+              <span>22/02/2025 18:45</span>
+              <ion-icon name="navigate-outline"></ion-icon>
+              <span>Sent</span>
+              <span>Sophia Wagner</span>
+              <span>-46.00 €</span>
+            </div>
+          </div>
+        </div>
+        <div class="credit-card-container">
+          <h2>Send money:</h2>
+          <label for="">Username: </label>
+          <input type="text" />
+          <label for="">Amount: </label>
+          <input type="number" />
+        </div>
+      </section>
+
+      <section class="transactions-container hidden"></section>
+
+      <section class="profile-container hidden"></section>
     </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/client.js"></script>
   </body>
 </html>
