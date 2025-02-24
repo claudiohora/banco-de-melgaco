@@ -15,7 +15,10 @@
         <img src="img/logo.png" alt="Bank logo" class="sidebar-bank-logo" />
 
         <div class="name-and-nav-container">
-          <span class="first-last-name"> { First name } { Last name } </span>
+          <div class="name-username">
+            <p class="first-last-name">{ First name } { Last name }</p>
+            <p>{ Username }</p>
+          </div>
 
           <nav class="nav-client">
             <div>
@@ -40,136 +43,63 @@
       </section>
 
       <section class="dashboard-container">
-        <div class="account-balance-container">
+        <div class="dashboard-header">
           <div>
-            <h2>Current Balance:</h2>
-            <p>1.000 €</p>
+            <p>Current balance</p>
+            <p>As of 24/02/2025, 13:03</p>
           </div>
-
           <div>
-            <h2>Loan:</h2>
-            <input type="number" />
-            <p>Interest rate: 5%</p>
+            <span>25 953, 92 €</span>
           </div>
         </div>
-        <div class="todays-transactions-container">
-          <h2>Recent Transactions:</h2>
-          <div>
-            <span>24/02/2025 14:37</span>
-            <ion-icon name="navigate-outline"></ion-icon>
-            <span>Sent</span>
-            <span>Emma Schneider</span>
-            <span>-120.00 €</span>
-          </div>
 
-          <div>
-            <span>23/02/2025 19:20</span>
-            <ion-icon name="download-outline"></ion-icon>
-            <span>Received</span>
-            <span>Michael Bauer</span>
-            <span>+75.00 €</span>
-          </div>
+        <div class="dashboard-body">
+          <div class="dashboard-history">
+            <!-- <ion-icon name="navigate-outline"></ion-icon> -->
+            <!-- <ion-icon name="download-outline"></ion-icon> -->
 
-          <div>
-            <span>23/02/2025 09:12</span>
-            <ion-icon name="navigate-outline"></ion-icon>
-            <span>Sent</span>
-            <span>Lukas Fischer</span>
-            <span>-65.00 €</span>
-          </div>
-
-          <div>
-            <span>22/02/2025 22:10</span>
-            <ion-icon name="download-outline"></ion-icon>
-            <span>Received</span>
-            <span>Laura Hoffmann</span>
-            <span>+50.00 €</span>
-          </div>
-
-          <div>
-            <span>22/02/2025 18:45</span>
-            <ion-icon name="navigate-outline"></ion-icon>
-            <span>Sent</span>
-            <span>Sophia Wagner</span>
-            <span>-46.00 €</span>
-          </div>
-
-          <div>
-            <span>21/02/2025 08:55</span>
-            <ion-icon name="download-outline"></ion-icon>
-            <span>Received</span>
-            <span>David Meier</span>
-            <span>+30.00 €</span>
-          </div>
-
-          <div>
-            <span>19/02/2025 16:22</span>
-            <ion-icon name="download-outline"></ion-icon>
-            <span>Received</span>
-            <span>Anna Lehmann</span>
-            <span>+90.00 €</span>
-          </div>
-
-          <div>
-            <span>17/02/2025 11:48</span>
-            <ion-icon name="download-outline"></ion-icon>
-            <span>Received</span>
-            <span>Felix Hoffmann</span>
-            <span>+75.00 €</span>
-          </div>
-
-          <div>
-            <span>15/02/2025 21:30</span>
-            <ion-icon name="download-outline"></ion-icon>
-            <span>Received</span>
-            <span>Nina Schulz</span>
-            <span>+120.00 €</span>
-          </div>
-
-          <div>
-            <span>14/02/2025 07:15</span>
-            <ion-icon name="download-outline"></ion-icon>
-            <span>Received</span>
-            <span>Marc Weber</span>
-            <span>+95.00 €</span>
-          </div>
-        </div>
-        <div class="my-spendings-container">
-          <h2>My Spendings This Month:</h2>
-          <p>February</p>
-          <p>Total: 231 €</p>
-          <div>
             <div>
-              <span>24/02/2025 14:37</span>
-              <ion-icon name="navigate-outline"></ion-icon>
-              <span>Sent</span>
-              <span>Emma Schneider</span>
-              <span>-120.00 €</span>
+              <span>24/02/2025 11:50</span>
+              <ion-icon name="download-outline"></ion-icon>
+              <span>Received from John Doe </span>
+              <span>23.00 €</span>
             </div>
+
             <div>
-              <span>23/02/2025 09:12</span>
+              <span>23/02/2025 19:20</span>
               <ion-icon name="navigate-outline"></ion-icon>
-              <span>Sent</span>
-              <span>Lukas Fischer</span>
-              <span>-65.00 €</span>
-            </div>
-            <div>
-              <span>22/02/2025 18:45</span>
-              <ion-icon name="navigate-outline"></ion-icon>
-              <span>Sent</span>
-              <span>Sophia Wagner</span>
-              <span>-46.00 €</span>
+              <span>Sent to Michael Johnson </span>
+              <span>- 47.50 €</span>
             </div>
           </div>
-        </div>
-        <div class="credit-card-container">
-          <h2>Send money:</h2>
-          <label for="">Username: </label>
-          <input type="text" />
-          <label for="">Amount: </label>
-          <input type="number" />
+
+          <div class="dashboard-transfer-request">
+            <div class="dashboard-transfer">
+              <h2>Transfer money</h2>
+              <div>
+                <label for="">Transfer to:</label>
+                <input type="text" />
+              </div>
+              <div>
+                <label for="">Amount:</label>
+                <input type="number" />
+              </div>
+              <button>Send</button>
+            </div>
+
+            <div class="dashboard-request">
+              <h2>Request loan</h2>
+              <div>
+                <label for="">Amount:</label>
+                <input type="number" />
+                <button>Request</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <section class="profile-container hidden"></section>
 
       <section class="transactions-container hidden"></section>
 

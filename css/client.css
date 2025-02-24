@@ -8,9 +8,11 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  background-color: #dcedc8;
+  background: linear-gradient(45deg, #dcedc8, #aed581);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 85vh;
   width: 20%;
+  margin-right: 20px;
 
   /* border-right: solid black; */
 }
@@ -24,8 +26,11 @@
   flex-direction: column;
 }
 
-.first-last-name {
+.name-username {
   margin-bottom: 50px;
+}
+
+.first-last-name {
 }
 
 .nav-client {
@@ -43,26 +48,44 @@
 /* DASHBOARD */
 
 .dashboard-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.credit-card-container {
   display: flex;
   flex-direction: column;
-  background-color: blue;
 }
 
-.todays-transactions-container {
-  background-color: brown;
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.account-balance-container {
-  background-color: darkgreen;
+.dashboard-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.my-spendings-container {
-  background-color: gold;
+.dashboard-history {
+}
+
+.dashboard-transfer-request {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-transfer,
+.dashboard-request {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-transfer {
+  background: linear-gradient(45deg, #8bc34a, #4caf50);
+}
+
+.dashboard-request {
+  background: linear-gradient(45deg, #44afff, #1e88e5);
 }
 
 .hidden {
