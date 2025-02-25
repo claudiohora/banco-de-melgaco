@@ -24,6 +24,8 @@
 .name-and-nav-container {
   display: flex;
   flex-direction: column;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .name-username {
@@ -39,7 +41,20 @@
   gap: 10px;
 }
 
+.nav-client div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+.nav-client__active {
+  background: linear-gradient(45deg, #689738, #8bc34a);
+}
+
 .logout-container {
+  margin-left: 5px;
+  margin-right: 5px;
   margin-top: auto;
   margin-bottom: 20px;
 }
@@ -52,19 +67,42 @@
   flex-direction: column;
 }
 
-.dashboard-header {
+.balance {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+}
+
+.balance__label {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.balance__date {
+}
+
+.balance__value {
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .dashboard-body {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  height: 100vh;
 }
 
-.dashboard-history {
+.movements {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movements__line {
+  margin-bottom: 10px;
+  border-bottom: solid 1px;
 }
 
 .dashboard-transfer-request {
@@ -90,4 +128,29 @@
 
 .hidden {
   display: none;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* PROFILE */
+
+.profile-container {
+  width: 100vh;
+}
+
+.profile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-line {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid;
 }

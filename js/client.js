@@ -7,8 +7,27 @@ const profile = document.querySelector(".profile-a");
 
 // Containers
 const dashboardContainer = document.querySelector(".dashboard-container");
+const profileContainer = document.querySelector(".profile-container");
 
 // Functions
 dashboard.addEventListener("click", function (e) {
-  dashboardContainer.classList.toggle("hidden");
+  profileContainer.classList.add("hidden");
+  dashboardContainer.classList.remove("hidden");
+  profile.closest("div").classList.remove("nav-client__active");
+  dashboard.closest("div").classList.add("nav-client__active");
+  dashboard.closest("div").classList.add("nav-client__active");
 });
+
+profile.addEventListener("click", function (e) {
+  dashboardContainer.classList.add("hidden");
+  profileContainer.classList.remove("hidden");
+  dashboard.closest("div").classList.remove("nav-client__active");
+  dashboard.classList.remove("nav-client__active");
+  profile.closest("div").classList.add("nav-client__active");
+});
+
+// HIDDING TEMPORARILY
+/* 
+dashboardContainer.classList.add("hidden");
+profileContainer.classList.remove("hidden");
+ */

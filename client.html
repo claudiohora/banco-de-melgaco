@@ -21,7 +21,7 @@
           </div>
 
           <nav class="nav-client">
-            <div>
+            <div class="nav-client__active">
               <ion-icon name="grid-outline"></ion-icon>
               <a href="#dashboard" class="dashboard-a">Dashboard</a>
             </div>
@@ -43,29 +43,29 @@
       </section>
 
       <section class="dashboard-container">
-        <div class="dashboard-header">
+        <div class="balance">
           <div>
-            <p>Current balance</p>
-            <p>As of 24/02/2025, 13:03</p>
+            <p class="balance__label">Current balance</p>
+            <p class="balance__date">As of 24/02/2025, 13:03</p>
           </div>
           <div>
-            <span>25 953, 92 €</span>
+            <p class="balance__value">25 953,92 €</p>
           </div>
         </div>
 
         <div class="dashboard-body">
-          <div class="dashboard-history">
+          <div class="movements">
             <!-- <ion-icon name="navigate-outline"></ion-icon> -->
             <!-- <ion-icon name="download-outline"></ion-icon> -->
 
-            <div>
+            <div class="movements__line">
               <span>24/02/2025 11:50</span>
               <ion-icon name="download-outline"></ion-icon>
               <span>Received from John Doe </span>
               <span>23.00 €</span>
             </div>
 
-            <div>
+            <div class="movements__line">
               <span>23/02/2025 19:20</span>
               <ion-icon name="navigate-outline"></ion-icon>
               <span>Sent to Michael Johnson </span>
@@ -99,7 +99,62 @@
         </div>
       </section>
 
-      <section class="profile-container hidden"></section>
+      <section class="profile-container hidden">
+        <h2>Profile Settings</h2>
+        <div class="profile-body">
+          <div class="profile-line">
+            <span>Username:</span>
+            <span>johndoe21</span>
+          </div>
+
+          <div class="profile-line">
+            <span>Password:</span>
+            <div>
+              <span>**********</span>
+              <!-- <input type="password" name="" id="" placeholder="Change password" /> -->
+              <button>Change Password</button>
+            </div>
+          </div>
+
+          <div class="profile-line">
+            <span>First name:</span>
+            <span>John</span>
+          </div>
+
+          <div class="profile-line">
+            <span>Last name:</span>
+            <span>Doe</span>
+          </div>
+
+          <div class="profile-line">
+            <span>Gender:</span>
+            <span>Male</span>
+          </div>
+
+          <div class="profile-line">
+            <span>Email:</span>
+            <div>
+              <span>johndoe@dough.com</span>
+              <!-- <input type="text" placeholder="Change email" /> -->
+              <button>Change Email</button>
+            </div>
+          </div>
+
+          <div class="profile-line">
+            <span>Phone:</span>
+            <div>
+              <span>+123 123 456 789</span>
+              <!-- <input type="text" placeholder="Change phone number" /> -->
+              <button>Change Phone Number</button>
+            </div>
+          </div>
+
+          <div class="profile-line">
+            <span>Account number:</span>
+            <span>123456789</span>
+          </div>
+        </div>
+      </section>
 
       <section class="transactions-container hidden"></section>
 
