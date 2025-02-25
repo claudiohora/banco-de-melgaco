@@ -112,5 +112,38 @@ h2 {
 /*  ABOUT US SECTION */
 
 .about-us {
-  margin-top: 50px;
+  margin-top: 80px;
+}
+
+.about-us h1 {
+  margin-bottom: 80px;
+}
+
+.about-us img {
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.about-us__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.about-us__body__block {
+  align-content: center;
+}
+
+.justify-right {
+  display: flex;
+  justify-content: end;
+}
+
+.margin-right {
+  margin-right: 20px;
+}
+
+.margin-left {
+  margin-left: 20px;
 }
