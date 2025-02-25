@@ -113,14 +113,19 @@ h2 {
 
 .about-us {
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .about-us h1 {
   margin-bottom: 80px;
 }
 
+.about-us h2 {
+  font-size: 30px;
+}
+
 .about-us img {
-  height: 200px;
+  height: 250px;
   width: auto;
   border-radius: 10px;
 }
