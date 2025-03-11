@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/client.css" />
+  </head>
+  <body>
+    <section class="main-container main-container--client">
+      <section class="sidebar">
+        <img src="img/logo.png" alt="Bank logo" class="sidebar-bank-logo" />
+
+        <div class="name-and-nav-container">
+          <div class="name-username">
+            <!-- <p class="first-last-name">{ First name } { Last name }</p> -->
+            <p>Admin</p>
+          </div>
+
+          <nav class="nav-client">
+            <div class="nav-client__active">
+              <ion-icon name="grid-outline"></ion-icon>
+              <a href="#users" class="dashboard-a">Users</a>
+            </div>
+            <!--             <div>
+              <ion-icon name="sync-outline"></ion-icon>
+              <a href="#transactions" class="transactions-a">Transactions</a>
+            </div> -->
+            <div>
+              <ion-icon name="person-outline"></ion-icon>
+              <a href="#profile" class="profile-a">Profile</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="logout-container">
+          <ion-icon name="log-out-outline"></ion-icon>
+          <a href="#logout">Logout</a>
+        </div>
+      </section>
+
+      <section class="dashboard-container">
+        <p class="balance__label">Users</p>
+
+        <div class="dashboard-body">
+          <div class="movements">
+            <!-- <ion-icon name="navigate-outline"></ion-icon> -->
+            <!-- <ion-icon name="download-outline"></ion-icon> -->
+
+            <div class="movements__line">
+              <a href="#">John Doe (johndoe21)</a>
+            </div>
+
+            <div class="movements__line">
+              <a href="#">Michael Johnson (michaeljohnson)</a>
+            </div>
+          </div>
+
+          <!-- <div class="dashboard-transfer-request">
+             <div class="dashboard-transfer">
+              <h2>Transfer money</h2>
+              <div>
+                <label for="">Transfer to:</label>
+                <input type="text" />
+              </div>
+              <div>
+                <label for="">Amount:</label>
+                <input type="number" />
+              </div>
+              <button>Send</button>
+            </div>
+
+            <div class="dashboard-request">
+              <h2>Request loan</h2>
+              <div>
+                <label for="">Amount:</label>
+                <input type="number" />
+                <button>Request</button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="profile-container hidden">
+        <h2>Profile Settings</h2>
+        <div class="profile-body">
+          <div class="profile-line">
+            <span>Username:</span>
+            <span>admin</span>
+          </div>
+
+          <div class="profile-line">
+            <span>Password:</span>
+            <div>
+              <span>**********</span>
+              <!-- <input type="password" name="" id="" placeholder="Change password" /> -->
+              <button>Change Password</button>
+            </div>
+          </div>
+
+          <div class="profile-line">
+            <span>Account number:</span>
+            <span>1</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="transactions-container hidden"></section>
+
+      <section class="profile-container hidden"></section>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/client.js"></script>
+  </body>
+</html>
