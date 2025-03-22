@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/client.css" />
+    <link rel="stylesheet" href="css/admin.css" />
   </head>
   <body>
     <section class="main-container main-container--client">
@@ -43,7 +44,7 @@
       </section>
 
       <section class="dashboard-container">
-        <p class="balance__label">Users</p>
+        <h2>Users</h2>
 
         <div class="dashboard-body">
           <div class="movements">
@@ -51,37 +52,117 @@
             <!-- <ion-icon name="download-outline"></ion-icon> -->
 
             <div class="movements__line">
-              <a href="#">John Doe (johndoe21)</a>
+              <a href="#">johndoe21</a>
             </div>
 
             <div class="movements__line">
-              <a href="#">Michael Johnson (michaeljohnson)</a>
+              <a href="#">michaeljohnson</a>
             </div>
           </div>
 
-          <!-- <div class="dashboard-transfer-request">
-             <div class="dashboard-transfer">
-              <h2>Transfer money</h2>
-              <div>
-                <label for="">Transfer to:</label>
-                <input type="text" />
-              </div>
-              <div>
-                <label for="">Amount:</label>
-                <input type="number" />
-              </div>
-              <button>Send</button>
+          <!-- START OF THE USER INFO SECTION -->
+          <div class="profile-body">
+            <div class="profile-line">
+              <span>Username:</span>
+              <span>johndoe21</span>
+              <input type="text" />
+              <button>Change username</button>
             </div>
 
-            <div class="dashboard-request">
-              <h2>Request loan</h2>
+            <div class="profile-line">
+              <span>Password:</span>
               <div>
-                <label for="">Amount:</label>
-                <input type="number" />
-                <button>Request</button>
+                <span>**********</span>
+                <!-- <input type="password" name="" id="" placeholder="Change password" /> -->
+                <button>See Password</button>
+                <button>Change Password</button>
               </div>
             </div>
-          </div> -->
+
+            <div class="profile-line">
+              <span>First name:</span>
+              <span>John</span>
+              <input type="text" name="" id="" />
+              <button>Change First Name</button>
+            </div>
+
+            <div class="profile-line">
+              <span>Last name:</span>
+              <span>Doe</span>
+              <input type="text" name="" id="" />
+              <button>Change Last Name</button>
+            </div>
+
+            <div class="profile-line">
+              <span>Gender:</span>
+              <span>Male</span>
+              <select name="" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <button>Change Gender</button>
+            </div>
+
+            <div class="profile-line">
+              <span>Email:</span>
+              <div>
+                <span>johndoe@email.com</span>
+                <!-- <input type="text" placeholder="Change email" /> -->
+                <input type="text" />
+                <button>Change Email</button>
+              </div>
+            </div>
+
+            <div class="profile-line">
+              <span>Phone:</span>
+              <div>
+                <span>+123 123 456 789</span>
+                <!-- <input type="text" placeholder="Change phone number" /> -->
+                <input type="text" pattern="\d" />
+                <button>Change Phone Number</button>
+              </div>
+            </div>
+
+            <div class="profile-line">
+              <span>Account number:</span>
+              <span>123456789</span>
+            </div>
+
+            <div class="profile-line">
+              <span>Account created on:</span>
+              <span>11/01/2024</span>
+            </div>
+
+            <div class="user-balance-info">
+              <div>
+                <label>Current Balance: { current balance }</label>
+                <input type="text" pattern="\d" />
+                <button>Change Balance</button>
+              </div>
+
+              <div>
+                <label for="">Add Balance: </label>
+                <input type="number" />
+                <button>Confirm</button>
+              </div>
+
+              <div>
+                <label for="">Subtract Balance: </label>
+                <input type="number" />
+                <button>Confirm</button>
+              </div>
+            </div>
+
+            <div class="see-movements">
+              <a href="#user-movements">See Transactions</a>
+            </div>
+            <div class="block-account">
+              <button>Block Account</button>
+            </div>
+            <div class="delete-account">
+              <button>Delete Account</button>
+            </div>
+          </div>
         </div>
       </section>
 

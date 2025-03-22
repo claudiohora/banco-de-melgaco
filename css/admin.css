@@ -1,0 +1,29 @@
+.user-balance-info {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: aqua;
+}
+
+.see-movements,
+.block-account,
+.delete-account {
+  display: flex;
+  padding: 5px;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.see-movements {
+  background-color: gray;
+}
+
+.block-account {
+  background-color: blue;
+}
+
+.delete-account {
+  background-color: red;
+}
+
+.user-movements {
+}

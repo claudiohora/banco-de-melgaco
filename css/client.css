@@ -137,6 +137,7 @@
   width: 100vh;
 }
 
+.user-info-container,
 .profile-body {
   display: flex;
   flex-direction: column;
